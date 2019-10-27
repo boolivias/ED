@@ -14,7 +14,6 @@ typedef struct fila{
     int Size;
 } Fila;
 
-//Função que instancia a fila
 void new_Fila(Fila *p, int Size);
 
 //Função que verifica se a fila está vazia
@@ -41,4 +40,4 @@ int getSize(Fila*p);
 //Função que retorna o número de elementos na fila
 int Count(Fila *p);
 
-#endif // FILA_H
+#endif

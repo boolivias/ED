@@ -13,14 +13,13 @@ int Count(Fila *p);
 void new_Fila(Fila *p, int Size){
     p->Start = 0;
     p->End = 0;
-    p->Size = Size+1; //o tamanho adicional é o espaço de sacrificio
-                      //para verificar se a fila está cheia ou vazia
+    p->Size = Size+1;
 }
 
 int isEmpty(Fila *p){
     if( p->Start == p->End )
-        return 1; //Retorna 1 se a fila está vazia
-    return 0;     //0 Se não está vazia
+        return 1;
+    return 0;
 }
 
 int getFull(Fila *p){
@@ -29,7 +28,7 @@ int getFull(Fila *p){
     if( p->End+1 == p->Start )
         return 1;
 
-    return 0; //Retorna 0 somente no caso da fila não estiver cheia
+    return 0;
 }
 
 int Add(Fila *p, T item, int op){
