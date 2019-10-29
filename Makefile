@@ -28,7 +28,7 @@ $(code-object): $(dir-code).c $(dir-h).h
 
 $(h-object): $(dir-h).c $(dir-h).h
 	@echo 'Compilando $(h-object)'
-	$(CC) -o $(h-object) $(dir-h).c $(CFLAGS)
+	$(CC) -o $(h-object) $(dir-h).c $(CFLAGS) -c
 	@echo -e 'Concluído\n'
 
 c: $(dir-code).c
